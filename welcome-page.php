@@ -1,20 +1,16 @@
 <?php include_once 'includes/header.php'; ?>
-<?php include_once 'includes/navbar.php' ;?>
 
-<main id="main" style="background-color: black;">
-    <section class="container-fluid" style="background-image: url(inc/logo_simple.png); background-position: center; background-repeat: no-repeat;">
-        <div class="welcome d-flex justify-content-center m-5">
-
-            <ul class="list-group m-5">
-                <li class="list-group-item list-group-item-action">
-                    <a href="inscription.php" class="btn">Inscription</a>
-                </li>
-                <li class="list-group-item list-group-item-action">
-                    <a href="login.php" class="btn">Connexion</a>
-                </li>
-            </ul>
+<main style="background-color: rgba(16,16,16,0.96); height: 100vh;">
+    <section class="container-fluid p-5"
+             style="background-image: url(inc/logo_simple.png); background-position: center; background-repeat: no-repeat; height: 100vh">
+        <div class="row gy-5 mt-5 p-5">
+            <div class="col d-flex justify-content-center mr-5 p-5">
+                <a href="inscription.php" class="btn btn-outline-warning">Incription</a>
+            </div>
+            <div class="col d-flex justify-content-center ml-5 p-5">
+                <a href="login.php" class="btn btn-outline-warning">Connexion</a>
+            </div>
         </div>
     </section>
 </main>
 
-<?php include_once 'includes/footer.php'; ?>
