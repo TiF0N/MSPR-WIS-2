@@ -3,7 +3,6 @@
         <nav class="navbar navbar-expand-lg navbar-dark sticky-top bg-dark">
             <div class="container-fluid  ">
 
-
                     <a class="navbar-brand" href="#">SymphoLink</a>
 
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -12,13 +11,11 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
 
-
-
-
-                <input class="form-control form-control-dark  w-100" type="text" placeholder="Search" aria-label="Search">
+                <input class="form-control form-control-dark w-100" type="text" placeholder="Rechercher" aria-label="Search">
+                <button class="btn btn-warning ml-2" type="button">Rechercher</button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                data-toggle="dropdown" aria-expanded="false">
