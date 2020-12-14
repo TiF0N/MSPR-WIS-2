@@ -7,7 +7,7 @@
         <div class="container">
 
             <div>
-                <h1 class="pt-3 d-flex justify-content-center">Publication</h1>
+                <h1 class="pt-3 d-flex justify-content-center">Publications</h1>
             </div>
 
             <div class="row">
