@@ -1,5 +1,5 @@
 <?php include_once 'includes/header.php'; ?>
-
+<?php include_once 'includes/navbar.php' ;?>
 
 <main id="main" style="background-color: black;">
     <section class="container-fluid" style="background-image: url(inc/logo_simple.png); background-position: center; background-repeat: no-repeat;">
