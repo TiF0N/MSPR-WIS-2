@@ -1,17 +1,27 @@
 <?php
 include_once '../includes/helpers.php';
 
+$email = $_POST['email'];
+
+$dbh = connectDB();
+$stmt = $dbh->prepare('SELECT * FROM users WHERE email = :email');
+$stmt->bindParam(':email', $email);
+$stmt->execute();
+
+$user = $stmt->fetch(PDO::FETCH_ASSOC);
 
 
+// Comparaison du pass envoyé via le formulaire avec la base
+$isPasswordCorrect = password_verify($_POST['password'], $user['password']);
 
-$log = getLogin($_POST['email'],$_POST['password']);
-
-if ($log == false) {
-    header("Location: ./login.php");
-}
-else{
-    session_start();
-    $_SESSION['email'] = $_POST['email'];
-    $_SESSION['password'] = $_POST["password"];
-    header("Location: ../index.php");
+if (!$user) {
+    echo 'Mauvais identifiant ou mot de passe !';
+} else {
+    if ($isPasswordCorrect) {
+        session_start();
+        $_SESSION['id'] = $user['id'];
+        echo 'Vous êtes connecté !';
+    } else {
+        echo 'Mauvais identifiant ou mot de passe !';
+    }
 }

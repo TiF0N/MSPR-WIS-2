@@ -27,7 +27,7 @@
                         <a class="text-warning text-decoration-none" href="../../index.php">Fil d'actualité</a>
                     </li>
                     <li>
-                        <a class="text-warning text-decoration-none" href="../../profile.php">Voir mon profil</a>
+                        <a class="text-warning text-decoration-none" href="profile.php">Voir mon profil</a>
                     </li>
 
                 </ul>
@@ -53,9 +53,10 @@
 
     <!-- Copyright -->
     <div class="footer-copyright text-center py-3 bg-dark text-white">©2020 Copyright
+
         <a class="text-white" href="../../index.php"> SymphoLink.fr</a>
+
     </div>
-    <!-- Copyright -->
 
 </footer>
 <!-- Footer -->
