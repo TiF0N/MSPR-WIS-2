@@ -1,4 +1,5 @@
 <?php
+<<<<<<< Updated upstream
 include_once '../includes/helpers.php';
 
 $email = $_POST['email'];
@@ -25,3 +26,6 @@ if (!$user) {
         echo 'Mauvais identifiant ou mot de passe !';
     }
 }
+=======
+include_once '../includes/helpers.php';
+>>>>>>> Stashed changes

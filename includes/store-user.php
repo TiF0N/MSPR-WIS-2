@@ -6,8 +6,7 @@ $data = [
     'nom' =>  $_POST['name'],
     'prenom' =>  $_POST['first_name'],
     'datenaissance' =>  $_POST['dateofbirth'],
-    'email' =>  $_POST['email'],
-    'password' =>  $_POST['password'],
+    'email' =>  $_POST['email']
 
 ];
 
