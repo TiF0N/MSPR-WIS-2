@@ -4,10 +4,29 @@
 /*!***********************!*\
   !*** ./src/js/app.js ***!
   \***********************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-__webpack_require__(/*! bootstrap */ "./node_modules/bootstrap/dist/js/bootstrap.esm.js");
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var bootstrap_js_dist_collapse__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! bootstrap/js/dist/collapse */ "./node_modules/bootstrap/js/dist/collapse.js");
+/* harmony import */ var bootstrap_js_dist_collapse__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(bootstrap_js_dist_collapse__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var bootstrap_js_dist_dropdown__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! bootstrap/js/dist/dropdown */ "./node_modules/bootstrap/js/dist/dropdown.js");
+/* harmony import */ var bootstrap_js_dist_dropdown__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(bootstrap_js_dist_dropdown__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var bootstrap_js_dist_modal__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! bootstrap/js/dist/modal */ "./node_modules/bootstrap/js/dist/modal.js");
+/* harmony import */ var bootstrap_js_dist_modal__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(bootstrap_js_dist_modal__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var bootstrap_js_dist_tab__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! bootstrap/js/dist/tab */ "./node_modules/bootstrap/js/dist/tab.js");
+/* harmony import */ var bootstrap_js_dist_tab__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(bootstrap_js_dist_tab__WEBPACK_IMPORTED_MODULE_3__);
+// import 'bootstrap/js/dist/alert';
+// import 'bootstrap/js/dist/button';
+// import 'bootstrap/js/dist/carousel';
+
+
+ // import 'bootstrap/js/dist/popover';
+// import 'bootstrap/js/dist/scrollspy';
+
+ // import 'bootstrap/js/dist/toast';
+// import 'bootstrap/js/dist/tooltip';
 
 /***/ }),
 
