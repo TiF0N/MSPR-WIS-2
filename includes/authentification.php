@@ -1,6 +1,9 @@
 <?php
 include_once '../includes/helpers.php';
 
+
+
+
 $log = getLogin($_POST['email'],$_POST['password']);
 
 if ($log == false) {

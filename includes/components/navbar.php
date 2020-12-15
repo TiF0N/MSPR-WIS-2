@@ -2,7 +2,7 @@
     <section id="navbar d-flex justify-content-between">
         <nav class="navbar navbar-expand-lg navbar-dark sticky-top bg-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">SymphoLink</a>
+                <a class="navbar-brand" href="index.php">SymphoLink</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
