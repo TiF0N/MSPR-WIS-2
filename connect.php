@@ -26,21 +26,21 @@
                     <div class="form-group">
                         <div class="custom-control custom-checkbox">
                             <input type="checkbox" class="custom-control-input" id="customControlInline">
-                            <label class="custom-control-label" for="customControlInline">Remember me</label>
+                            <label class="custom-control-label" for="customControlInline">Se souvenir de moi</label>
                         </div>
                     </div>
                     <div class="d-flex justify-content-center mt-3 login_container">
-                        <button type="button" name="button" class="btn login_btn">Login</button>
+                        <button type="button" name="button" class="btn btn-warning login_btn">Se connecter</button>
                     </div>
                 </form>
             </div>
 
             <div class="mt-4">
                 <div class="d-flex justify-content-center links">
-                    Don't have an account? <a href="#" class="ml-2">Sign Up</a>
+                    Vous ne possédez pas de compte ?<a href="inscription.php" class="ml-2">S'inscrire</a>
                 </div>
                 <div class="d-flex justify-content-center links">
-                    <a href="#">Forgot your password?</a>
+                    <a href="#">Mod de passe oublié ?</a>
                 </div>
             </div>
         </div>
