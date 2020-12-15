@@ -17,11 +17,12 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                data-bs-toggle="dropdown" aria-expanded="false">
-                                <img class="rounded-circle m-1" src="https://via.placeholder.com/50x50" alt=""> Prénom
-                                Nom
+                                <img class="rounded-circle m-1" src="https://via.placeholder.com/50x50" alt="">
+                                <?php include_once 'admin.php' ?> patrick
+
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="profile.php">Profile</a></li>
+                                <li><a class="dropdown-item" href="profile.php">Profil</a></li>
                                 <li><a class="dropdown-item" href="#">Paramètres</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
