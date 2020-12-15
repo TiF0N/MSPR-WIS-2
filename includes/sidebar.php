@@ -1,21 +1,21 @@
-<section class="">
+<aside id="sidebar">
     <div class="row" style="max-width: 100%;">
         <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-secondary navbar-secondary sidebar collapse">
             <div class="position-sticky pt-3">
                 <ul class="nav flex-column">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">
-                            Dashboard
+                            Fil D'actualités
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">
-                            Orders
+                            Mes publications
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">
-                            Products
+                            Liste de mes Amis
                         </a>
                     </li>
                     <li class="nav-item">
@@ -35,33 +35,7 @@
                     </li>
                 </ul>
 
-                <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 ">
-                    <span>Saved reports</span>
-
-                </h6>
-                <ul class="nav flex-column mb-2">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            Current month
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            Last quarter
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            Social engagement
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            Year-end sale
-                        </a>
-                    </li>
-                </ul>
             </div>
         </nav>
     </div>
-</section>
+</aside>
