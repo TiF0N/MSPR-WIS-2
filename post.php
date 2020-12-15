@@ -15,6 +15,7 @@
                     <form method="post" action="#" class="my-5">
                         <div class="form-group">
                             <label for="exampleFormControlTextarea1">Votre publication</label>
+                            <i class="fas fa-camera"></i>
                             <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"
                                       name="post"></textarea>
                         </div>
