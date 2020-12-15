@@ -1,5 +1,5 @@
 <?php
-include_once 'includes/helpers.php';
+include_once '../includes/helpers.php';
 
 $log = getLogin($_POST['email'],$_POST['password']);
 
@@ -10,5 +10,5 @@ else{
     session_start();
     $_SESSION['email'] = $_POST['email'];
     $_SESSION['password'] = $_POST["password"];
-    header("Location: ./index.php");
+    header("Location: ../index.php");
 }
