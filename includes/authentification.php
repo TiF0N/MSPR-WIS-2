@@ -8,7 +8,7 @@ if ($log == false) {
 }
 else{
     session_start();
-    $_SESSION['nom'] = $_POST['nom'];
-    $_SESSION['firstname'] = $_POST["firstname"];
+    $_SESSION['email'] = $_POST['email'];
+    $_SESSION['password'] = $_POST["password"];
     header("Location: ../index.php");
 }

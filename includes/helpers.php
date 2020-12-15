@@ -9,6 +9,11 @@ function connectDB()
 }
 
 
+function getUserByEmail($email){
+
+}
+
+
 //on récupère un user
 function getLogin($email,$password){
     $dbh = connectDB();
@@ -21,10 +26,17 @@ function getLogin($email,$password){
 
 function getUser($nom,$firstname){
     $dbh = connectDB();
-    $stmt = $dbh->prepare("SELECT nom, firstname FROM users WHERE email = :email AND password = :password");
+    $stmt = $dbh->prepare("SELECT nom, firstname FROM users WHERE nom = :email AND password = :password");
     $stmt->bindValue(':nom', $nom);
-    $stmt->bindValue('$:firstname', $firstname);
+    $stmt->bindValue(':firstname', $firstname);
     $stmt->execute();
+    return $stmt->fetch(PDO::FETCH_ASSOC);
+}
+
+// On récupère un utilisateur basé sur son ID
+function getUserData($id){
+    $dbh = connectDB();
+    $stmt = $dbh->query("SELECT * FROM users WHERE id = $id");
     return $stmt->fetch(PDO::FETCH_ASSOC);
 }
 

@@ -6,18 +6,14 @@
                 <div class="row">
                     <div class="col-lg-4 d-flex justify-content-center align-items-center flex-column py-3">
                         <img class="rounded-circle" src="https://via.placeholder.com/100x100/" alt="">
-                        <h1 class="h2 mt-4">Bonjour, Name !</h1>
-                        <a class="btn btn-primary" href="#">Modifier mon profil</a>
+                        <h1 class="h2 mt-4">Bonjour <?php echo $_SESSION['nom'] . ' '. $_SESSION['firstname'];?></h1>
+                        <a class="btn btn-primary" href="edit-user.php">Modifier mon profil</a>
                     </div>
                     <div class="col-lg-8 py-5">
                         <div class="card">
                             <div class="card-body">
-                                <h2 class="h3">My Biographie</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus alias asperiores
-                                    aut beatae debitis, earum enim et ex fuga, hic labore non sapiente voluptatum. A
-                                    earum fugit in obcaecati vero. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus alias asperiores
-                                    aut beatae debitis, earum enim et ex fuga, hic labore non sapiente voluptatum. A
-                                    earum fugit in obcaecati vero.</p>
+                                <h2 class="h3">BIO</h2>
+                                <p><?php $_SESSION['bio']; ?></p>
                             </div>
                         </div>
                     </div>

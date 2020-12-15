@@ -11,7 +11,7 @@
                 <input class="form-control form-control-dark w-100" type="text" placeholder="Rechercher"
                        aria-label="Search">
                 <button class="btn btn-warning ms-2" type="button">Rechercher</button>
-                <?php include_once 'admin.php' ?>
+                <p class="text-white"><?php include_once 'admin.php' ?></p>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item dropdown">
@@ -21,7 +21,7 @@
                                 Nom
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="../../profile.php">Profile</a></li>
+                                <li><a class="dropdown-item" href="profile.php">Profile</a></li>
                                 <li><a class="dropdown-item" href="#">Paramètres</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
