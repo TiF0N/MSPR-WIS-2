@@ -11591,10 +11591,10 @@ fieldset:disabled .btn {
 }
 
 .nav-item a {
-  color: white;
+  color: #727171;
 }
 
-.nav-item a:hover {
+.nav-item .nav-link:hover {
   color: #ffc107;
 }
 
