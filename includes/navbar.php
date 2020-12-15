@@ -23,7 +23,7 @@
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item text-danger" href="#">Déconnexion</a></li>
+                                <li><a class="dropdown-item text-danger" href="logout.php">Déconnexion</a></li>
                             </ul>
                         </li>
                     </ul>
