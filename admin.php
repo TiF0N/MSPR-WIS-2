@@ -8,12 +8,14 @@ if(empty($_SESSION['id']))
     header('Location: login.php');
     exit();
 }
+
+$user = getUser($_SESSION['id']);
 ?>
 
 <div class="container mt-5">
     <figure class="text-center">
         <blockquote class="blockquote">
-            <h2 class="text-white"><?php echo 'Bienvenue ', getUser($_SESSION['id']); // Ici on est bien log, on affiche un message ?></h2>
+            <h2 class="text-white"><?php echo 'Bienvenue ', $user['nom'] . " " . $user['firstname']; // Ici on est bien log, on affiche un message ?></h2>
         </blockquote>
     </figure>
 
