@@ -27,6 +27,13 @@ function getUser($id){
     return $stmt->fetch(PDO::FETCH_ASSOC);
 }
 
+// On récupere le contenu des posts
+function getPosts(){
+    $dbh = connectDB();
+    $stmt = $dbh->query("SELECT * FROM posts ORDER BY id ASC");
+    return $stmt->fetch(PDO::FETCH_ASSOC);
+}
+
 
 
 
