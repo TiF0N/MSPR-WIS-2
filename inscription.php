@@ -1,4 +1,4 @@
-<?php include_once 'includes/header.php'; ?>
+<?php include_once 'includes/layout/header.php'; ?>
 
     <main id="main">
         <section class="container">
@@ -6,7 +6,7 @@
             <div class="mb-5">
                 <a href="login.php">Vous avez déjà un compte ?</a>
             </div>
-            <form method="post" action="assets/store-user.php" class="my-5">
+            <form method="post" action="includes/store-user.php" class="my-5">
                 <div class="mb-3">
                     <label for="name" class="name">Nom</label>
                     <input type="text" class="form-control" id="name" name="name" required>
@@ -39,4 +39,4 @@
     </main>
 
 
-<?php include_once 'includes/footer.php'; ?>
+<?php include_once 'includes/layout/footer.php'; ?>

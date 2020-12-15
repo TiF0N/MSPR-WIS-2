@@ -1,4 +1,4 @@
-<?php include_once 'includes/header.php'; ?>
+<?php include_once 'includes/layout/header.php'; ?>
 
 <main style="background-color: rgba(16,16,16,0.96); height: 100vh;">
     <section class="container-fluid p-5"

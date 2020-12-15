@@ -18,12 +18,12 @@
                                 Mon Prénom Nom
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="profile.php">Profile</a></li>
+                                <li><a class="dropdown-item" href="../../profile.php">Profile</a></li>
                                 <li><a class="dropdown-item" href="#">Paramètres</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item text-danger" href="logout.php">Déconnexion</a></li>
+                                <li><a class="dropdown-item text-danger" href="../../logout.php">Déconnexion</a></li>
                             </ul>
                         </li>
                     </ul>

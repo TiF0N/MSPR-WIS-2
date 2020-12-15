@@ -1,5 +1,5 @@
-<?php include_once 'includes/header.php'; ?>
-<?php include_once 'includes/navbar.php'; ?>
+<?php include_once 'includes/layout/header.php'; ?>
+<?php include_once 'includes/components/navbar.php'; ?>
     <main id="main">
         <section class="section">
             <div class="container">
@@ -37,4 +37,4 @@
 
     </main>
 
-<?php include_once 'includes/footer.php'; ?>
+<?php include_once 'includes/layout/footer.php'; ?>

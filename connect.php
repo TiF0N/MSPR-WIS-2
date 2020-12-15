@@ -1,4 +1,4 @@
-<?php include_once 'includes/header.php'; ?>
+<?php include_once 'includes/layout/header.php'; ?>
 
 <div class="container h-100">
     <div class="d-flex justify-content-center h-100">
@@ -47,4 +47,4 @@
     </div>
 </div>
 
-<?php include_once 'includes/footer.php'; ?>
+<?php include_once 'includes/layout/footer.php'; ?>

@@ -1,4 +1,4 @@
-<?php include_once 'includes/header.php'; ?>
+<?php include_once 'includes/layout/header.php'; ?>
 
     <main>
         <section class="container ">
@@ -9,7 +9,7 @@
             <div class="row card mb-5">
                 <div class="col">
 
-                    <form method="post" action="assets/authentification.php" class="my-5">
+                    <form method="post" action="includes/authentification.php" class="my-5">
                         <div class="mb-3">
                             <label for="email">Email</label>
                             <input type="email" class="form-control w-50" id="email" name="email" required>
@@ -39,4 +39,4 @@
     </main>
 
 
-<?php include_once 'includes/footer.php'; ?>
+<?php include_once 'includes/layout/footer.php'; ?>
