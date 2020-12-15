@@ -30,9 +30,7 @@
     "vue-template-compiler": "^2.6.12"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.15.1",
     "bootstrap": "^5.0.0-alpha3",
-    "font-awesome": "^4.7.0",
     "jquery": "^3.5.1",
     "jquery-sticky": "^1.0.4",
     "owl.carousel": "^2.3.4",
