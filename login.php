@@ -8,6 +8,9 @@
 
             <div class="row">
                 <div class="col">
+
+
+
                     <form method="post" action="index.php" class="my-5">
                         <div class="mb-3">
                             <label for="email">Email</label>
@@ -28,7 +31,8 @@
                         Rejoignez la plus grande communautée musicale du monde
                     </p>
 
-                    <a href="inscription.php" class="btn btn-warning mt-5 fw-bolder text-white" role="button" aria-pressed="true">
+                    <a href="inscription.php" class="btn btn-warning mt-5 fw-bolder text-white" role="button"
+                       aria-pressed="true">
                         S'inscrire
                     </a>
 
