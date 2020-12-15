@@ -9,7 +9,7 @@ function connectDB()
 }
 
 
-//on récupère un User
+//on récupère un user
 function getLogin($email,$password){
     $dbh = connectDB();
     $stmt = $dbh->prepare("SELECT email, password FROM users WHERE email = :email AND password = :password");

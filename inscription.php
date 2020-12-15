@@ -6,7 +6,7 @@
             <div class="mb-5">
                 <a href="login.php">Vous avez déjà un compte ?</a>
             </div>
-            <form method="post" action="#" class="my-5">
+            <form method="post" action="assets/store-user.php" class="my-5">
                 <div class="mb-3">
                     <label for="name" class="name">Nom</label>
                     <input type="text" class="form-control" id="name" name="name" required>

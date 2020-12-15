@@ -8,9 +8,10 @@
 
         <div class="row">
 
-            <div class="col-md-6 mt-md-0 mt-3">
+            <div class="col-md-5 mt-md-0 mt-3 d-flex flex-column justify-content-center align-items-center">
 
-                <h5 class="text-uppercase text-white" >SymphoLink</h5>
+                <span class="text-uppercase text-white h5">SymphoLink</span>
+                <img class="w-25" src="inc/logo_simple.png" alt="">
                 <p class="text-white">Le plus grand site de partage musicale</p>
 
             </div>
@@ -19,14 +20,14 @@
 
             <div class="col-md-3 mb-md-0 mb-3">
 
-                <h5 class="text-uppercase text-white">Links</h5>
+                <span class="h5 text-uppercase text-white">Actualités</span>
 
-                <ul class="list-unstyled">
+                <ul class="list-unstyled m-3 ">
                     <li>
-                        <a class="text-warning" href="#!">Link 1</a>
+                        <a class="text-warning text-decoration-none" href="index.php">Fil d'actualité</a>
                     </li>
                     <li>
-                        <a class="text-warning" href="#!">Link 2</a>
+                        <a class="text-warning text-decoration-none" href="profile.php">Voir mon profil</a>
                     </li>
 
                 </ul>
@@ -35,14 +36,11 @@
 
             <div class="col-md-3 mb-md-0 mb-3">
 
-                <h5 class="text-uppercase text-white">Links</h5>
+                <span class="h5 text-uppercase text-white">Liens utiles</span>
 
-                <ul class="list-unstyled ">
+                <ul class="list-unstyled m-3 ">
                     <li>
-                        <a class="text-warning" href="#!">Link 1</a>
-                    </li>
-                    <li>
-                        <a class="text-warning" href="#!" >Link 2</a>
+                        <a class="text-warning text-decoration-none" href="#">Modifier mes paramètres</a>
                     </li>
 
                 </ul>
@@ -54,7 +52,7 @@
     </div>
 
     <!-- Copyright -->
-    <div class="footer-copyright text-center py-3 bg-dark text-white">© 2020 Copyright
+    <div class="footer-copyright text-center py-3 bg-dark text-white">©2020 Copyright
         <a class="text-white" href="index.php"> SymphoLink.fr</a>
     </div>
     <!-- Copyright -->
