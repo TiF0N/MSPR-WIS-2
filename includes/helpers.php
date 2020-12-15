@@ -20,30 +20,11 @@ function getLogin($email,$password){
     return $stmt->fetch(PDO::FETCH_ASSOC);
 }
 
-<<<<<<< Updated upstream
-=======
-
->>>>>>> Stashed changes
-
 // On récupère un utilisateur basé sur son ID
-function getUserData($id){
+function getUser($id){
     $dbh = connectDB();
     $stmt = $dbh->query("SELECT * FROM users WHERE id = $id");
     return $stmt->fetch(PDO::FETCH_ASSOC);
-}
-
-
-//  Récupération de l'utilisateur et de son pass hashé
-function getdata(){
-
-    $dbh = connectDB();
-    $stmt = $dbh->query("SELECT id, pass FROM users WHERE pseudo = :pseudo");
-    $req->execute(array(
-        'pseudo' => $pseudo));
-    $resultat = $req->fetch();
-
-
-
 }
 
 

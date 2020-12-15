@@ -1,8 +1,8 @@
 <?php
-// On prolonge la session
-session_start();
-// On teste si la variable de session existe et contient une valeur
-if(empty($_SESSION['email']))
+include_once 'includes/helpers.php';
+
+// On test si la variable de session existe et contient une valeur
+if(empty($_SESSION['id']))
 {
     // Si inexistante ou nulle, on redirige vers le formulaire de login
     header('Location: login.php');
@@ -13,7 +13,7 @@ if(empty($_SESSION['email']))
 <div class="container mt-5">
     <figure class="text-center">
         <blockquote class="blockquote">
-            <h2><?php echo 'Bienvenue ', $_SESSION['nom'] . ' ' . $_SESSION['firstname']; // Ici on est bien log, on affiche un message ?></h2>
+            <h2 class="text-white"><?php echo 'Bienvenue ', getUser($_SESSION['id']); // Ici on est bien log, on affiche un message ?></h2>
         </blockquote>
     </figure>
 

@@ -1,5 +1,5 @@
 <?php
-<<<<<<< Updated upstream
+
 include_once '../includes/helpers.php';
 
 $email = $_POST['email'];
@@ -21,11 +21,8 @@ if (!$user) {
     if ($isPasswordCorrect) {
         session_start();
         $_SESSION['id'] = $user['id'];
-        echo 'Vous êtes connecté !';
+        header("Location: ../index.php");
     } else {
         echo 'Mauvais identifiant ou mot de passe !';
     }
 }
-=======
-include_once '../includes/helpers.php';
->>>>>>> Stashed changes
