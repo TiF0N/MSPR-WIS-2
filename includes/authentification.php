@@ -3,8 +3,8 @@
 include_once '../includes/helpers.php';
 
 $email = $_POST['email'];
-
 $dbh = connectDB();
+
 $stmt = $dbh->prepare('SELECT * FROM users WHERE email = :email');
 $stmt->bindParam(':email', $email);
 $stmt->execute();
@@ -24,5 +24,6 @@ if (!$user) {
         header("Location: ../index.php");
     } else {
         echo 'Mauvais identifiant ou mot de passe !';
+
     }
 }

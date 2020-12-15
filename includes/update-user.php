@@ -1,22 +1,24 @@
 <?php include_once '../includes/helpers.php';
 
-$id = $_GET['id'];
 
+$user = getUser($_SESSION['id']);
 
 
 $data = [
-    'nom' =>  $_POST['name'],
-    'prenom' =>  $_POST['first_name'],
-    'datenaissance' =>  $_POST['dateofbirth'],
+    'nom' =>  $_POST['nom'],
+    'firstname' =>  $_POST['firstname'],
+    'dob' =>  $_POST['dob'],
     'email' =>  $_POST['email'],
     'password' =>  $_POST['password'],
+    'id' =>  $_POST['id'],
+
 
 ];
 
 
 $dbh = connectDB();
 
-$stmt = $dbh->prepare('UPDATE users SET nom = :nom, prenom = :prenom, datenaissance = :datenaissance email = :email, password = :password  WHERE id = :id');
+$stmt = $dbh->prepare('UPDATE users SET nom = :nom, prenom = :prenom, dob = :dob email = :email, password = :password  WHERE id = :id');
 $stmt->bindValue(':nom', $data['nom']);
 $stmt->bindValue(':prenom', $data['prenom']);
 $stmt->bindValue(':datenaissance', $data['datenaissance']);
