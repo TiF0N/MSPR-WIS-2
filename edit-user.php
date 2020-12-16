@@ -1,12 +1,8 @@
-<?php include_once 'includes/layout/header.php';
-include_once 'includes/helpers.php';
-
-?>
-
 <?php
+require_once 'includes/helpers.php';
+require_once 'includes/layout/header.php';
 
 $user = getUser($_SESSION['id']);
-
 ?>
 
     <section id="">
@@ -28,7 +24,7 @@ $user = getUser($_SESSION['id']);
                 </div>
 
                 <div class="form-group">
-                    <label for=firstname>firstname</label>
+                    <label for=firstname>Prénom</label>
                     <input type="text" id="firstname" name="firstname" class="form-control"
                            value="<?php echo $user['firstname']; ?>" required>
                 </div>
@@ -69,11 +65,6 @@ $user = getUser($_SESSION['id']);
                            value="<?php echo $user['email']; ?>" >
                 </div>
 
-                <div class="form-group">
-                    <label for="password">Mot de passe</label>
-                    <input type="text" id="password" name="password" class="form-control"
-                           >
-                </div>
 
                 <div class="form-group">
                     <label for="bio">Bio</label>
