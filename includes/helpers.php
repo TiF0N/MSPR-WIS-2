@@ -31,7 +31,7 @@ function getUser($id){
 function getPosts(){
     $dbh = connectDB();
     $stmt = $dbh->query("SELECT * FROM posts ORDER BY id ASC");
-    return $stmt->fetch(PDO::FETCH_ASSOC);
+    return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
 
 
