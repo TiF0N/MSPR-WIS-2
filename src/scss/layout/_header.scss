@@ -1,4 +1,26 @@
 #header {
   position: fixed;
   width: 100%;
+  z-index: 9000;
+
+  .navbar-brand {
+    font-size: 2rem;
+  }
+
+  .search-bar {
+
+    .form-control {
+      min-width: 350px;
+    }
+  }
+
+  .navbar {
+
+    ul {
+
+      li {
+
+      }
+    }
+  }
 }

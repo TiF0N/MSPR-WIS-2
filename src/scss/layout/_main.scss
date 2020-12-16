@@ -1,3 +1,22 @@
 #main {
+  padding-top: 74px;
   position: relative;
+  display: flex;
+  width: 100%;
+
+  .sidebar-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    background-color: $dark;
+
+    #sidebar {
+      position: fixed;
+    }
+  }
+
+  .content-wrapper {
+    flex-grow: 1;
+  }
 }
+
