@@ -4,6 +4,7 @@ include_once 'includes/helpers.php';
 ?>
 
 <?php
+
 $user = getUser($_SESSION['id']);
 var_dump($user);
 ?>
@@ -23,7 +24,7 @@ var_dump($user);
 
                 <div class="mb-3">
                     <label for="formFile" class="form-label">Photo de Profil</label>
-                    <input class="form-control" type="file" id="formFile">
+                    <input class="form-control" type="file" name="profile_pic" id="formFile">
                 </div>
 
                 <div class="form-group">
@@ -40,42 +41,50 @@ var_dump($user);
 
                 <div class="form-group">
                     <label for="dob">date de naissance</label>
-                    <input type="text" id="dob" name="dob" class="form-control"
-                           value="<?php echo $user['dob']; ?>" required>
+                    <input type="date" id="dob" name="dob" class="form-control"
+                           value="<?php echo $user['dob']; ?>" >
                 </div>
 
                 <div class="form-group">
-                    <label for="type">Type</label>
-                    <input type="text" id="type" name="type" class="form-control"
-                           value="<?php echo $user['type']; ?>" required>
+                    <label for="specialty">Spécialité</label>
+                    <input type="text" id="specialty" name="specialty" class="form-control"
+                           value="<?php echo $user['specialty']; ?>" >
                 </div>
 
                 <div class="form-group">
-                    <label for=firstname>ville</label>
+                    <label for=ville>ville</label>
                     <input type="text" id="ville" name="ville" class="form-control"
-                           value="<?php echo $user['ville']; ?>" required>
+                           value="<?php echo $user['ville']; ?>" >
                 </div>
 
                 <div class="form-group">
                     <label for="mobile">Mobile</label>
                     <input type="text" id="mobile" name="mobile" class="form-control"
-                           value="<?php echo $user['mobile']; ?>" required>
+                           value="<?php echo $user['mobile']; ?>" >
                 </div>
 
                 <div class="form-group">
                     <label for="email">Email</label>
                     <input type="email" id="email" name="email" class="form-control"
-                           value="<?php echo $user['email']; ?>" required>
+                           value="<?php echo $user['email']; ?>" >
                 </div>
 
                 <div class="form-group">
                     <label for="password">Mot de passe</label>
                     <input type="text" id="password" name="password" class="form-control"
-                           value="<?php echo $user['password']; ?>" required>
+                           >
+                </div>
+
+                <div class="form-group">
+                    <label for="bio">Bio</label>
+                    <input type="text" id="bio" name="bio" class="form-control"
+                           value="<?php echo $user['bio']; ?>" >
                 </div>
 
 
-                <button class="btn btn-warning " type="submit">
+
+
+                <button class="btn btn-warning mt-3 mb-3" type="submit">
                     Mettre à jour
                 </button>
 
