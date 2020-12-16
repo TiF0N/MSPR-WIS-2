@@ -34,6 +34,13 @@ function getPosts(){
     return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
 
+//On recupere la liste des posts pour un utilisateur donné
+function getUserPosts($id){
+    $dbh = connectDB();
+    $stmt = $dbh->query("SELECT * FROM posts RIGHT JOIN users ON users.id = posts.user_id WHERE users.id = $id");
+    return $stmt->fetchAll(PDO::FETCH_ASSOC);
+}
+
 
 
 
