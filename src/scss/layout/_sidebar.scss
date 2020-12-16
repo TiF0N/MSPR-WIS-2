@@ -1,0 +1,18 @@
+#sidebar {
+  position: fixed;
+  width: 100%;
+  max-width: 250px;
+  border: 2px solid red;
+  top: 118px;
+
+  .nav-item {
+
+    .nav-link {
+      color: #d2cfcf;
+
+      &:hover {
+        color: #ffc107;
+      }
+    }
+  }
+}
