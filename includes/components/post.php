@@ -1,11 +1,18 @@
-<?php $author = getUser($post['id']); ?>
+<?php $author = getUser($post['id']);
+?>
+
 
 <div class="card mb-4">
     <div class="card-header">
         <?php if(isset($author) && isset($author['nom'])): ?>
         <span>Ecrit par : <?php echo $author['nom']; ?></span>
+<<<<<<< Updated upstream
         <?php endif; ?>
         <span>Publié le : <?php echo $post['created_at'] ?></span>
+=======
+        <span>Publié le : <?php echo $post['created_at']; ?></span>
+        <span>made the : <?php echo date('Y', strtotime($post['created_at'])); ?></span>
+>>>>>>> Stashed changes
     </div>
 
     <div class="card-body justify-content-between align-content-center align-items-center">
