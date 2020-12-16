@@ -3,16 +3,12 @@ require_once '../includes/helpers.php';
 
 session_start();
 
-if($_SESSION['id'] !== $_GET['id']){
-    die();
-}
-
-$id = $_SESSION['id'];
-$post = getUserPosts($_SESSION['id']);
+$user_id = $_SESSION['id'];
+$post_id = $_GET['id'];
 
 $dbh = connectDB();
 $stmt = $dbh->prepare('DELETE FROM posts WHERE id = :id');
-$stmt->bindValue(':id', $post['id']);
+$stmt->bindValue(':id', $post_id);
 $stmt->execute();
 
-header('Location: ../index.php');
+header('Location: ../');
