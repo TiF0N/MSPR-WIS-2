@@ -1,12 +1,12 @@
 <?php include_once 'includes/layout/header.php';
 include_once 'includes/helpers.php';
-$id = $_GET['id'];
+$id = $_SESSION['id'];
 $user = getUser($id);
 
 ?>
 <?php include_once 'includes/components/navbar.php'; ?>
 
-<?php $user = getUser($_SESSION['id']); ?>
+
     <main id="main">
         <section class="section">
             <div class="container">
