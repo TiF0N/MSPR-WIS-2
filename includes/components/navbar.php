@@ -28,7 +28,7 @@ $user = getUser($_SESSION['id']);
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="profile.php">Profil</a></li>
-                                <li><a class="dropdown-item" href="#">Paramètres</a></li>
+                                <li><a class="dropdown-item" href="edit-user.php">Paramètres</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>

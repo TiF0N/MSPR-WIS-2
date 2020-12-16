@@ -23,7 +23,8 @@ $user = getUser($_SESSION['id']);
 
                 <div class="mb-3">
                     <label for="formFile" class="form-label">Photo de Profil</label>
-                    <input class="form-control" type="text" name="profil_pic" id="formFile">
+                    <input class="form-control" type="text" name="profil_pic" id="formFile"
+                           value="<?php echo $user['profil_pic']; ?>" required>
                 </div>
 
                 <div class="form-group">
