@@ -2,7 +2,7 @@
 include_once 'includes/helpers.php';
 
 ?>
-
+<?php session_start() ?>
 <?php
 
 $user = getUser($_SESSION['id']);
@@ -69,11 +69,6 @@ var_dump($user);
                            value="<?php echo $user['email']; ?>" >
                 </div>
 
-                <div class="form-group">
-                    <label for="password">Mot de passe</label>
-                    <input type="text" id="password" name="password" class="form-control"
-                           >
-                </div>
 
                 <div class="form-group">
                     <label for="bio">Bio</label>
