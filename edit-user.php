@@ -6,7 +6,7 @@ include_once 'includes/helpers.php';
 <?php
 
 $user = getUser($_SESSION['id']);
-var_dump($user);
+
 ?>
 
     <section id="">
@@ -15,7 +15,7 @@ var_dump($user);
             <div class="d-flex justify-between py-5 align-items-center">
                 <h1 class="py-5">Réglages du compte</h1>
 
-                <a href="assets/"
+                <a href="includes/delete-user.php?id=<?php echo $user['id']; ?>"
                    class="btn btn-outline-danger">Supprimer mon compte</a>
             </div>
 
