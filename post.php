@@ -16,7 +16,7 @@ $posts_users = getUserPosts($id); ?>
                                   id="exampleFormControlTextarea1" rows="5"
                                   name="content"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-warning">Publier</button>
+                    <button type="submit" class="btn btn-outline-warning">Publier</button>
                 </form>
 
             </div>
@@ -28,8 +28,7 @@ $posts_users = getUserPosts($id); ?>
                         <?php foreach ($posts as $post): ?>
                             <li class="list-group-item d-flex justify-content-between align-content-center align-items-center">
                                 <span><?php echo $post['content']; ?></span>
-                                <span>Date :  <?php echo $post['created_at']?></span>
-                                <a class="btn btn-danger" href="includes/delete-post.php">Supprimer</a>
+                                <span>Date :  <?php echo $post['created_at'] ?></span>
                             </li>
                         <?php endforeach; ?>
                     </ul>
@@ -43,11 +42,16 @@ $posts_users = getUserPosts($id); ?>
                 <?php if ($posts_users = getUserPosts($id)): ?>
                     <ul class="mt-4 p-2 rounded-2">
                         <?php foreach ($posts_users as $posts_user): ?>
-                            <li class="list-group-item d-flex justify-content-between align-content-center align-items-center">
-                                <span><?php echo $posts_user['content']; ?></span>
-                                <span>Date :  <?php echo $posts_user['created_at']?></span>
-                                <a class="btn btn-danger" href="includes/delete-post.php?id=">Supprimer</a>
-                            </li>
+                            <div class="card d-flex ">
+                                <div class="card-header">
+                                    Publié le : <?php echo $posts_user['created_at'] ?>
+                                </div>
+                                <div class="card-body justify-content-between align-content-center align-items-center">
+                                    <p class="card-text"><?php echo $posts_user['content']; ?></p>
+                                    <a class="btn btn-outline-warning" href="includes/delete-post.php?id=">Supprimer</a>
+                                </div>
+                            </div>
+
                         <?php endforeach; ?>
                     </ul>
                 <?php endif; ?>
