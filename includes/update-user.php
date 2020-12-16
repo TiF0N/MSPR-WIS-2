@@ -3,7 +3,6 @@
 
 $user = getUser($_SESSION['id']);
 
-
 $data = [
     'nom' =>  $_POST['nom'],
     'firstname' =>  $_POST['firstname'],
@@ -21,7 +20,7 @@ $dbh = connectDB();
 $stmt = $dbh->prepare('UPDATE users SET nom = :nom, prenom = :prenom, dob = :dob email = :email, password = :password  WHERE id = :id');
 $stmt->bindValue(':nom', $data['nom']);
 $stmt->bindValue(':prenom', $data['prenom']);
-$stmt->bindValue(':datenaissance', $data['datenaissance']);
+$stmt->bindValue(':datenaissance', $data['dateofbirth']);
 $stmt->bindValue(':email', $data['email']);
 $stmt->bindValue(':password', $data['password']);
 $stmt->bindValue(':id', $id);

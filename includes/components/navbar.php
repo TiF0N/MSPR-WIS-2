@@ -1,3 +1,8 @@
+<?php
+include_once 'includes/helpers.php';
+$user = getUser($_SESSION['id']);
+
+?>
 <header>
     <section id="navbar d-flex justify-content-between">
         <nav class="navbar navbar-expand-lg navbar-dark sticky-top bg-dark">
@@ -18,7 +23,7 @@
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                data-bs-toggle="dropdown" aria-expanded="false">
                                 <img class="rounded-circle m-1" src="https://via.placeholder.com/50x50" alt="">
-                                <?php include_once 'admin.php' ?> patrick
+                                <?php echo $user['firstname'] ?>
 
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">

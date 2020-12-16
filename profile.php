@@ -1,4 +1,9 @@
-<?php include_once 'includes/layout/header.php'; ?>
+<?php include_once 'includes/layout/header.php';
+include_once 'includes/helpers.php';
+$id = $_GET['id'];
+$user = getUser($id);
+
+?>
 <?php include_once 'includes/components/navbar.php'; ?>
 
 <?php $user = getUser($_SESSION['id']); ?>

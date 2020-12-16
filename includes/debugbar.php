@@ -28,7 +28,7 @@
                     <?php var_dump($_GET); ?>
                 </div>
                 <div class="tab-pane fade" id="post" role="tabpanel" aria-labelledby="post-tab">
-                    <?php var_dump($_POST); ?>
+                    <?php var_dump($_POST);?>
                 </div>
                 <div class="tab-pane fade" id="server" role="tabpanel" aria-labelledby="server-tab">
                     <?php var_dump($_SERVER); ?>

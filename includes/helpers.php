@@ -37,7 +37,4 @@ function getPosts(){
 
 
 
-
-
-
 ?>

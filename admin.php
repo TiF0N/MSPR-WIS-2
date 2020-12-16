@@ -1,6 +1,5 @@
 <?php
 include_once 'includes/helpers.php';
-
 // On test si la variable de session existe et contient une valeur
 if(empty($_SESSION['id']))
 {
@@ -18,5 +17,4 @@ $user = getUser($_SESSION['id']);
             <h2 class="text-white"><?php echo 'Bienvenue ', $user['nom'] . " " . $user['firstname']; // Ici on est bien log, on affiche un message ?></h2>
         </blockquote>
     </figure>
-
 </div>
