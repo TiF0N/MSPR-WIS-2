@@ -1,12 +1,8 @@
-<?php include_once 'includes/layout/header.php';
-include_once 'includes/helpers.php';
-
-?>
-<?php session_start() ?>
 <?php
+require_once 'includes/helpers.php';
+require_once 'includes/layout/header.php';
 
 $user = getUser($_SESSION['id']);
-var_dump($user);
 ?>
 
     <section id="">
@@ -28,7 +24,7 @@ var_dump($user);
                 </div>
 
                 <div class="form-group">
-                    <label for=firstname>firstname</label>
+                    <label for=firstname>Prénom</label>
                     <input type="text" id="firstname" name="firstname" class="form-control"
                            value="<?php echo $user['firstname']; ?>" required>
                 </div>
