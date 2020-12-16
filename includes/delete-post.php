@@ -7,6 +7,7 @@ if($_SESSION['id'] !== $_GET['id']){
     die();
 }
 
+$id = $_SESSION['id'];
 $post = getUserPosts($_SESSION['id']);
 
 $dbh = connectDB();
