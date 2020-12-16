@@ -18,9 +18,9 @@ $user = getUser($id);
                     </div>
                     <div class="col-lg-8 py-5">
 
-                        <div class="card">
-                            <div class="card-header">
-                                <h2 class="text-warning ">BIO</h2>
+                        <div class="card regular shadow">
+                            <div class="card-header bg-dark">
+                                <h2 class="text-warning">BIO</h2>
                             </div>
                             <div class="card-body">
                                 <p class="card-text"><?php echo $user['bio']; ?></p>
@@ -33,11 +33,16 @@ $user = getUser($id);
         <section class="section">
             <div class="container py-4">
                 <h2 class="h2">Publications likés :</h2>
-                <div class="card">
-                    <div class="card-body">
-                        <p>La publication...</p>
-                    </div>
-                </div>
+                <ul class="mt-4 p-2 rounded-2">
+                    <li class="list-group-item list-group-item-action bg-dark text-white p-3 regular shadow d-flex flex-column">
+                        <span>La publication</span>
+                        <a href="#" class="btn btn-outline-primary">Voir la publication</a>
+                    </li>
+                    <li class="list-group-item list-group-item-action bg-dark text-white p-3 regular shadow">
+                        <span>La publication</span>
+                    </li>
+
+                </ul>
             </div>
         </section>
 
