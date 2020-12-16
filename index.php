@@ -1,20 +1,14 @@
-<?php include_once 'includes/layout/header.php';
-
-if (empty($_SESSION['id'])) {
-    // Si inexistante ou nulle, on redirige vers le formulaire de login
-    header('Location: login.php');
-    exit();
-}
-?>
+<?php include_once 'includes/layout/header.php'; ?>
 
 <main id="main">
 
-    <div class="globalwrapper">
+    <div class="sidebar-wrapper">
         <?php include_once 'includes/components/sidebar.php'; ?>
-
-        <?php include_once 'post.php'; ?>
     </div>
 
+    <div class="content-wrapper">
+        <?php include_once 'post.php'; ?>
+    </div>
 
 </main>
 

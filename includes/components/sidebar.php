@@ -1,6 +1,5 @@
 <aside id="sidebar">
-    <div class="sidebarwrapper">
-        <nav id="sticker" >
+        <nav>
             <ul class="nav flex-column">
                 <li class="nav-item">
                     <a class="nav-link" href="#">
@@ -34,7 +33,7 @@
                 </li>
             </ul>
         </nav>
-    </div>
+
 
 </aside>
 

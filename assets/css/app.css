@@ -11591,20 +11591,43 @@ fieldset:disabled .btn {
 }
 
 #main {
+  padding-top: 74px;
   position: relative;
+  display: flex;
+  width: 100%;
+}
+
+#main .sidebar-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  background-color: #212529;
+}
+
+#main .sidebar-wrapper #sidebar {
+  position: fixed;
+}
+
+#main .content-wrapper {
+  flex-grow: 1;
 }
 
 #header {
   position: fixed;
   width: 100%;
+  z-index: 9000;
+}
+
+#header .navbar-brand {
+  font-size: 2rem;
+}
+
+#header .search-bar .form-control {
+  min-width: 350px;
 }
 
 #sidebar {
-  position: fixed;
-  width: 100%;
-  max-width: 250px;
-  border: 2px solid red;
-  top: 118px;
+  width: 300px;
 }
 
 #sidebar .nav-item .nav-link {
