@@ -13,8 +13,8 @@ $user = getUser($id);
                 <div class="row">
                     <div class="col-lg-4 d-flex justify-content-center align-items-center flex-column py-3">
                         <img class="rounded-circle" src="https://via.placeholder.com/100x100/" alt="">
-                        <h1 class="h2 mt-4">Profil de : <?php echo $user['nom'] . ' ' . $user['firstname']; ?></h1>
-                        <a class="btn btn-warning" href="edit-user.php">Modifier mon profil</a>
+                        <h1 class="h2 mt-4">Bonjour, <?php echo $user['nom'] . ' ' . $user['firstname']; ?></h1>
+                        <a class="btn btn-warning mt-4" href="edit-user.php">Modifier mon profil</a>
                     </div>
                     <div class="col-lg-8 py-5">
 
@@ -36,10 +36,11 @@ $user = getUser($id);
                 <ul class="mt-4 p-2 rounded-2">
                     <li class="list-group-item list-group-item-action bg-dark text-white p-3 regular shadow d-flex flex-column">
                         <span>La publication</span>
-                        <a href="#" class="btn btn-outline-primary">Voir la publication</a>
+                        <a href="#" class="btn btn-outline-warning mt-3">Voir la publication</a>
                     </li>
-                    <li class="list-group-item list-group-item-action bg-dark text-white p-3 regular shadow">
+                    <li class="list-group-item list-group-item-action bg-dark text-white p-3 regular shadow d-flex flex-column">
                         <span>La publication</span>
+                        <a href="#" class="btn btn-outline-warning mt-3">Voir la publication</a>
                     </li>
 
                 </ul>
