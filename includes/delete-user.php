@@ -1,5 +1,5 @@
 <?php
-include_once '../includes/helpers.php';
+require_once '../includes/helpers.php';
 
 session_start();
 
