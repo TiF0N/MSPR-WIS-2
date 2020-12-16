@@ -20,16 +20,22 @@ $posts_users = getUserPosts($id); ?>
                 </form>
 
             </div>
+
             <div class="col-lg-4">
 
                 <h3 class="text-center">Dernières publications</h3>
                 <?php if ($posts = getPosts()): ?>
                     <ul class="mt-4 p-2 rounded-2">
                         <?php foreach ($posts as $post): ?>
-                            <li class="list-group-item d-flex justify-content-between align-content-center align-items-center">
-                                <span><?php echo $post['content']; ?></span>
-                                <span>Date :  <?php echo $post['created_at'] ?></span>
-                            </li>
+                            <div class="card d-flex ">
+                                <div class="card-header">
+                                    Ecrit par  : <?php echo $post['id']; ?>
+                                </div>
+                                <div class="card-body justify-content-between align-content-center align-items-center">
+                                    <p class="card-text"><?php echo $post['content']; ?></p>
+                                </div>
+                            </div>
+
                         <?php endforeach; ?>
                     </ul>
                 <?php endif; ?>
@@ -38,7 +44,7 @@ $posts_users = getUserPosts($id); ?>
 
             <div class="col-lg-4">
 
-                <h3 class="text-center">Vos dernières publications</h3>
+                <h3 class="text-center">Vos dernières publications :</h3>
                 <?php if ($posts_users = getUserPosts($id)): ?>
                     <ul class="mt-4 p-2 rounded-2">
                         <?php foreach ($posts_users as $posts_user): ?>
