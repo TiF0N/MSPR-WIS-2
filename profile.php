@@ -12,7 +12,7 @@ $user = getUser($id);
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4 d-flex justify-content-center align-items-center flex-column py-3">
-                        <img class="rounded-circle" style="height: 150px; width: auto" src="<?php echo $user['profil_pic']; ?>" alt="">
+                        <img class="rounded-circle " style="height: 150px; width: auto" src="<?php echo $user['profil_pic']; ?>" alt="">
                         <h1 class="h2 mt-4">Compte de : <?php echo $user['nom'] . ' ' . $user['firstname']; ?></h1>
                         <a class="btn btn-warning mt-4" href="edit-user.php">Modifier mon profil</a>
                     </div>
