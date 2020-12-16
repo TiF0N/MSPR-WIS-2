@@ -1,6 +1,7 @@
 <?php $posts = getPosts();
 $id = $_SESSION['id'];
 $posts_users = getUserPosts($id); ?>
+
 <section class="py-5">
     <div class="container">
 

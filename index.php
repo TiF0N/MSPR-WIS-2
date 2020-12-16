@@ -9,9 +9,12 @@ if (empty($_SESSION['id'])) {
 
 <main id="main">
 
-    <?php include_once 'includes/components/sidebar.php'; ?>
+    <div class="globalwrapper">
+        <?php include_once 'includes/components/sidebar.php'; ?>
 
-    <?php include_once 'post.php'; ?>
+        <?php include_once 'post.php'; ?>
+    </div>
+
 
 </main>
 
