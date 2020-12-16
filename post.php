@@ -1,12 +1,13 @@
-<?php $posts = getPosts(); ?>
-
+<?php $posts = getPosts();
+$id = $_SESSION['id'];
+$posts_users = getUserPosts($id); ?>
 <section class="py-5">
     <div class="container">
 
         <h1 class="pt-3 d-flex justify-content-center">Publications</h1>
 
         <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-4">
 
                 <form method="post" action="./includes/store-post.php" class="my-5">
                     <div class="form-group mb-3">
@@ -19,15 +20,33 @@
                 </form>
 
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-4">
 
-                <h3 class="text-center">Vos dernières publications</h3>
+                <h3 class="text-center">Dernières publications</h3>
                 <?php if ($posts = getPosts()): ?>
                     <ul class="mt-4 p-2 rounded-2">
                         <?php foreach ($posts as $post): ?>
                             <li class="list-group-item d-flex justify-content-between align-content-center align-items-center">
                                 <span><?php echo $post['content']; ?></span>
-                                <a class="btn btn-danger">Supprimer</a>
+                                <span>Date :  <?php echo $post['created_at']?></span>
+                                <a class="btn btn-danger" href="includes/delete-post.php">Supprimer</a>
+                            </li>
+                        <?php endforeach; ?>
+                    </ul>
+                <?php endif; ?>
+
+            </div>
+
+            <div class="col-lg-4">
+
+                <h3 class="text-center">Vos dernières publications</h3>
+                <?php if ($posts_users = getUserPosts($id)): ?>
+                    <ul class="mt-4 p-2 rounded-2">
+                        <?php foreach ($posts_users as $posts_user): ?>
+                            <li class="list-group-item d-flex justify-content-between align-content-center align-items-center">
+                                <span><?php echo $posts_user['content']; ?></span>
+                                <span>Date :  <?php echo $posts_user['created_at']?></span>
+                                <a class="btn btn-danger" href="includes/delete-post.php?id=">Supprimer</a>
                             </li>
                         <?php endforeach; ?>
                     </ul>
