@@ -12,7 +12,7 @@ $user = getUser($_SESSION['id']);
                 <h1 class="py-5">Réglages du compte</h1>
 
                 <a href="includes/delete-user.php?id=<?php echo $user['id']; ?>"
-                   class="btn btn-outline-danger">Supprimer mon compte</a>
+                   class="btn btn-outline-danger m-lg-3">Supprimer mon compte</a>
             </div>
 
             <form action="includes/update-user.php?id=<?php echo $user['id']; ?>" method="POST">
@@ -20,7 +20,7 @@ $user = getUser($_SESSION['id']);
 
                 <div class="mb-3">
                     <label for="formFile" class="form-label">Photo de Profil</label>
-                    <input class="form-control" type="file" name="profile_pic" id="formFile">
+                    <input class="form-control" type="text" name="profil_pic" id="formFile">
                 </div>
 
                 <div class="form-group">

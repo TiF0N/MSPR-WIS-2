@@ -22,7 +22,7 @@ $user = getUser($_SESSION['id']);
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                data-bs-toggle="dropdown" aria-expanded="false">
-                                <img class="rounded-circle m-1" src="https://via.placeholder.com/50x50" alt="">
+                                <img class="rounded-circle m-1" style="height: 70px; width: auto" src="<?php echo $user['profil_pic']; ?>" alt="">
                                 <?php echo $user['firstname'] ?>
 
                             </a>

@@ -12,7 +12,7 @@ $user = getUser($id);
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4 d-flex justify-content-center align-items-center flex-column py-3">
-                        <img class="rounded-circle" src="https://via.placeholder.com/100x100/" alt="">
+                        <img class="rounded-circle" style="height: 150px; width: auto" src="<?php echo $user['profil_pic']; ?>" alt="">
                         <h1 class="h2 mt-4">Bonjour, <?php echo $user['nom'] . ' ' . $user['firstname']; ?></h1>
                         <a class="btn btn-warning mt-4" href="edit-user.php">Modifier mon profil</a>
                     </div>
@@ -38,10 +38,7 @@ $user = getUser($id);
                         <span>La publication</span>
                         <a href="#" class="btn btn-outline-warning mt-3">Voir la publication</a>
                     </li>
-                    <li class="list-group-item list-group-item-action bg-dark text-white p-3 regular shadow d-flex flex-column">
-                        <span>La publication</span>
-                        <a href="#" class="btn btn-outline-warning mt-3">Voir la publication</a>
-                    </li>
+
 
                 </ul>
             </div>
