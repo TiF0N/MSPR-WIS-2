@@ -1,6 +1,9 @@
 <?php
 require_once 'includes/helpers.php';
 require_once 'includes/layout/header.php';
+require_once 'includes/components/navbar.php';
+
+
 
 $user = getUser($_SESSION['id']);
 ?>
