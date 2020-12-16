@@ -22,46 +22,29 @@ $posts_users = getUserPosts($id); ?>
             </div>
 
             <div class="col-lg-4">
-
                 <h3 class="text-center">Dernières publications</h3>
                 <?php if ($posts = getPosts()): ?>
                     <ul class="mt-4 p-2 rounded-2">
                         <?php foreach ($posts as $post): ?>
-                            <div class="card d-flex ">
-                                <div class="card-header">
-                                    Ecrit par  : <?php echo $post['id']; ?>
-                                </div>
-                                <div class="card-body justify-content-between align-content-center align-items-center">
-                                    <p class="card-text"><?php echo $post['content']; ?></p>
-                                </div>
-                            </div>
+
+                            <?php require 'includes/components/post.php'; ?>
 
                         <?php endforeach; ?>
                     </ul>
                 <?php endif; ?>
-
             </div>
 
             <div class="col-lg-4">
-
                 <h3 class="text-center">Vos dernières publications :</h3>
-                <?php if ($posts_users = getUserPosts($id)): ?>
+                <?php if ($posts = getUserPosts($id)): ?>
                     <ul class="mt-4 p-2 rounded-2">
-                        <?php foreach ($posts_users as $posts_user): ?>
-                            <div class="card d-flex ">
-                                <div class="card-header">
-                                    Publié le : <?php echo $posts_user['created_at'] ?>
-                                </div>
-                                <div class="card-body justify-content-between align-content-center align-items-center">
-                                    <p class="card-text"><?php echo $posts_user['content']; ?></p>
-                                    <a class="btn btn-outline-warning" href="includes/delete-post.php?id=">Supprimer</a>
-                                </div>
-                            </div>
+                        <?php foreach ($posts as $post): ?>
+
+                            <?php require 'includes/components/post.php'; ?>
 
                         <?php endforeach; ?>
                     </ul>
                 <?php endif; ?>
-
             </div>
 
 

@@ -9,9 +9,9 @@ function connectDB()
 }
 
 
-
 //on récupère un user
-function getLogin($email,$password){
+function getLogin($email, $password)
+{
     $dbh = connectDB();
     $stmt = $dbh->prepare("SELECT email, password FROM users WHERE email = :email AND password = :password");
     $stmt->bindValue(':email', $email);
@@ -21,27 +21,28 @@ function getLogin($email,$password){
 }
 
 // On récupère un utilisateur basé sur son ID
-function getUser($id){
+function getUser($id)
+{
     $dbh = connectDB();
     $stmt = $dbh->query("SELECT * FROM users WHERE id = $id");
     return $stmt->fetch(PDO::FETCH_ASSOC);
 }
 
 // On récupere le contenu des posts
-function getPosts(){
+function getPosts()
+{
     $dbh = connectDB();
     $stmt = $dbh->query("SELECT * FROM posts ORDER BY id ASC");
     return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
 
 //On recupere la liste des posts pour un utilisateur donné
-function getUserPosts($id){
+function getUserPosts($id)
+{
     $dbh = connectDB();
-    $stmt = $dbh->query("SELECT * FROM posts RIGHT JOIN users ON users.id = posts.user_id WHERE users.id = $id");
+    $stmt = $dbh->query("SELECT * FROM posts WHERE user_id = $id");
     return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
-
-
 
 
 ?>
