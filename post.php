@@ -9,12 +9,11 @@ $posts_users = getUserPosts($id); ?>
 
         <div class="row">
             <div class="col-lg-4">
-
-                <form method="post" action="./includes/store-post.php" class="my-5">
+                <form id="sticker" method="post" action="./includes/store-post.php" class="my-5">
                     <div class="form-group mb-3">
                         <label class="h5" for="exampleFormControlTextarea1">Votre publication</label>
                         <textarea placeholder="Ecrire votre publication..." class="form-control"
-                                  id="exampleFormControlTextarea1" rows="5"
+                                  id="exampleFormControlTextarea1" rows="4"
                                   name="content"></textarea>
                     </div>
                     <button type="submit" class="btn btn-outline-warning">Publier</button>
