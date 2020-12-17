@@ -1,4 +1,4 @@
-<?php $author = getUser($post['id']);
+<?php $author = getUser($post['user_id']);
 ?>
 
 
