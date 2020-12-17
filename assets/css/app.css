@@ -11612,6 +11612,63 @@ fieldset:disabled .btn {
   flex-grow: 1;
 }
 
+#main .dashboard {
+  margin: 50px;
+}
+
+#main .dashboard .profile {
+  margin: 1.5em;
+  border-radius: 5px;
+  padding: 2.5em;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#main .dashboard .profile .avatar {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 1.5em;
+}
+
+#main .dashboard .profile .avatar img {
+  max-height: 150px;
+  border-radius: 100%;
+  position: center;
+}
+
+#main .dashboard .profile .profile-name {
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+#main .dashboard .profile .profile-publication {
+  color: white;
+}
+
+#main .dashboard .profile .profile-publication h2,
+#main .dashboard .profile .profile-publication .h2 {
+  margin-bottom: 15px;
+}
+
+#main .dashboard .profile .profile-publication ul {
+  color: #ffffff;
+}
+
+#main .dashboard .profile .profile-publication ul li {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+  list-style-type: none;
+}
+
 #header {
   position: fixed;
   width: 100%;

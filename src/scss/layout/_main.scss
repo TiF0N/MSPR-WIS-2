@@ -18,5 +18,64 @@
   .content-wrapper {
     flex-grow: 1;
   }
+
+  .dashboard {
+    margin: 50px;
+
+    .profile {
+      margin: 1.5em;
+      border-radius: 5px;
+      padding: 2.5em;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+
+      .avatar {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin-bottom: 1.5em;
+
+        img {
+          max-height: 150px;
+          border-radius: 100%;
+          position: center;
+        }
+      }
+
+      .profile-name {
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+      }
+
+      .profile-publication {
+        color: white;
+
+        h2 {
+          margin-bottom: 15px;
+        }
+
+        ul {
+          color: #ffffff;
+
+          li {
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-content: center;
+            list-style-type: none;
+          }
+        }
+
+      }
+    }
+
+
+  }
 }
 

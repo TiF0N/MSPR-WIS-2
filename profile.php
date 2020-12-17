@@ -9,53 +9,48 @@ $user = getUser($id);
 
     <main id="main">
 
-        <section class="section py-5 mx-auto ">
+        <section class="dashboard mx-auto">
 
-            <div class="d-flex justify-content-center flex-column">
+            <div class="profile bg-dark">
+                <div class="py-3">
+                    <div class="avatar">
+                        <img src="<?php echo $user['profil_pic']; ?>" alt="">
+                    </div>
+                    <div class="profile-name">
+                        <h1 class="h1">Compte de : <?php echo $user['nom'] . ' ' . $user['firstname']; ?></h1>
 
-                <div class="py-3  border border-danger">
-
-                        <img class="rounded-circle " style="height: 150px; width: auto"
-                             src="<?php echo $user['profil_pic']; ?>" alt="">
-
-                        <h1 class="mt-4">Compte de : <?php echo $user['nom'] . ' ' . $user['firstname']; ?></h1>
-
-                        <a class="btn btn-warning mt-4" href="edit-user.php">Modifier mon profil</a>
+                        <a class="btn btn-outline-warning" href="edit-user.php">Modifier mon profil</a>
+                    </div>
                 </div>
 
+                <div class="profile-bio">
+                    <div class="py-5">
+                        <div class="card">
+                            <div class="card-header bg-dark">
+                                <h2 class="text-warning">BIO</h2>
+                            </div>
 
-                <div class="py-5 border border-primary">
-
-                    <div class="card  regular shadow ">
-                        <div class="card-header bg-dark">
-                            <h2 class="text-warning">BIO</h2>
-                        </div>
-
-                        <div class="card-body">
-                            <p class="card-text"><?php echo $user['bio']; ?></p>
+                            <div class="card-body">
+                                <p class="card-text"><?php echo $user['bio']; ?></p>
+                            </div>
                         </div>
                     </div>
 
                 </div>
 
+
+                <div class="profile-publication">
+                    <div class="py-4">
+                        <h2 class="h2 text-center">Publications likés :</h2>
+                        <ul>
+                            <li>
+                                <span>La publication</span>
+                                <a href="#" class="btn btn-outline-warning mt-3">Voir la publication</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-
-
-
-
-            <div class="py-4  container mt-auto border border-info">
-
-                <h2 class="h2 text-center">Publications likés :</h2>
-
-                <ul class="mt-4 p-2 rounded-2">
-                    <li class="list-group-item list-group-item-action bg-dark text-white p-3 regular shadow d-flex flex-column">
-                        <span>La publication</span>
-                        <a href="#" class="btn btn-outline-warning mt-3">Voir la publication</a>
-                    </li>
-                </ul>
-            </div>
-
-
         </section>
 
     </main>
