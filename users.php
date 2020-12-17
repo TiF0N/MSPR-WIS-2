@@ -5,19 +5,31 @@ $id = $_GET['id'];
 $users = getUsers();
 
 ?>
+    <main id="main">
+        <section class="container">
+            <div class="users-list">
+                <div class="title-list">
+                    <h1 class="h1 py-3">Liste des utilisateurs</h1>
+                    <a href="profile.php" class="btn btn-warning m-lg-3">Voir mon profil</a>
+                </div>
+                <?php if ($users = getUsers()): ?>
+                    <div class="list-group">
+                        <ul class="users">
+                            <?php foreach ($users
 
-    <div class="container">
-        <h1 class="py-5">Liste des utilisateurs</h1>
-        <?php if ($users = getUsers()): ?>
-            <div class="list-group">
-                <?php foreach ($users as $user): ?>
-                    <a href="profile.php?id=<?php echo $user['id']; ?>" class="list-group-item list-group-item-action">
-                        <?php echo $user['firstname'] . ' ' . $user['nom']; ?>
-                    </a>
-                <?php endforeach; ?>
+                            as $user): ?>
+                            <li class="list-group-item list-group-item-action">
+                                <a class="text-decoration-none" href="profile.php?id=<?php echo $user['id']; ?>">
+                                    <?php echo $user['firstname'] . ' ' . $user['nom']; ?>
+                                </a>
+                                <?php endforeach; ?>
+                            </li>
+                        </ul>
+                    </div>
+                <?php endif; ?>
             </div>
-        <?php endif; ?>
-    </div>
+        </section>
+    </main>
 
 
 <?php include_once 'includes/layout/footer.php'; ?>

@@ -11690,6 +11690,29 @@ fieldset:disabled .btn {
   justify-content: center;
 }
 
+#main .users-list {
+  color: #2c3034;
+}
+
+#main .users-list .title-list {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+
+#main .users-list .users {
+  color: #ffffff;
+}
+
+#main .users-list .users li {
+  padding: 1.5em;
+}
+
+#main .users-list .users li a {
+  color: #2c3034;
+}
+
 #header {
   position: fixed;
   width: 100%;

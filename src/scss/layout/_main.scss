@@ -94,5 +94,23 @@
       justify-content: center;
     }
   }
+  .users-list {
+    color: #2c3034;
+    .title-list {
+      display: flex;
+      justify-content: space-between;
+      align-content: center;
+      align-items: center;
+    }
+    .users {
+      color: #ffffff;
+      li {
+        padding: 1.5em;
+        a {
+          color: #2c3034;
+        }
+      }
+    }
+  }
 }
 
