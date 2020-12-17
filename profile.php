@@ -11,7 +11,7 @@ $user = getUser($id);
 
         <section class="dashboard mx-auto">
 
-            <div class="profile bg-dark">
+            <div class="profile bg-light shadow">
                 <div class="py-3">
                     <div class="avatar">
                         <img src="<?php echo $user['profil_pic']; ?>" alt="">
