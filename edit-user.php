@@ -14,7 +14,7 @@ $user = getUser($_SESSION['id']);
                 <h1>Réglages du compte</h1>
 
                 <a href="includes/delete-user.php?id=<?php echo $user['id']; ?>"
-                   class="btn btn-outline-danger m-lg-3">Supprimer mon compte</a>
+                   class="btn btn-outline-danger m-lg-3x²">Supprimer mon compte</a>
             </div>
 
             <form class="p-5" action="includes/update-user.php?id=<?php echo $user['id']; ?>" method="POST">

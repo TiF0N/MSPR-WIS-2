@@ -26,7 +26,5 @@ $stmt->execute();
 $id = $dbh->lastInsertId();
 header('Location: ../');
 
-
-
 header("Location: ../login.php");
 

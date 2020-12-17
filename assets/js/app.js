@@ -9,17 +9,20 @@
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var bootstrap_js_dist_collapse__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! bootstrap/js/dist/collapse */ "./node_modules/bootstrap/js/dist/collapse.js");
-/* harmony import */ var bootstrap_js_dist_collapse__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(bootstrap_js_dist_collapse__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var bootstrap_js_dist_dropdown__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! bootstrap/js/dist/dropdown */ "./node_modules/bootstrap/js/dist/dropdown.js");
-/* harmony import */ var bootstrap_js_dist_dropdown__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(bootstrap_js_dist_dropdown__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var bootstrap_js_dist_modal__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! bootstrap/js/dist/modal */ "./node_modules/bootstrap/js/dist/modal.js");
-/* harmony import */ var bootstrap_js_dist_modal__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(bootstrap_js_dist_modal__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var bootstrap_js_dist_tab__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! bootstrap/js/dist/tab */ "./node_modules/bootstrap/js/dist/tab.js");
-/* harmony import */ var bootstrap_js_dist_tab__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(bootstrap_js_dist_tab__WEBPACK_IMPORTED_MODULE_3__);
-// import 'bootstrap/js/dist/alert';
-// import 'bootstrap/js/dist/button';
-// import 'bootstrap/js/dist/carousel';
+/* harmony import */ var bootstrap_js_dist_button__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! bootstrap/js/dist/button */ "./node_modules/bootstrap/js/dist/button.js");
+/* harmony import */ var bootstrap_js_dist_button__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(bootstrap_js_dist_button__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var bootstrap_js_dist_collapse__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! bootstrap/js/dist/collapse */ "./node_modules/bootstrap/js/dist/collapse.js");
+/* harmony import */ var bootstrap_js_dist_collapse__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(bootstrap_js_dist_collapse__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var bootstrap_js_dist_dropdown__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! bootstrap/js/dist/dropdown */ "./node_modules/bootstrap/js/dist/dropdown.js");
+/* harmony import */ var bootstrap_js_dist_dropdown__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(bootstrap_js_dist_dropdown__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var bootstrap_js_dist_modal__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! bootstrap/js/dist/modal */ "./node_modules/bootstrap/js/dist/modal.js");
+/* harmony import */ var bootstrap_js_dist_modal__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(bootstrap_js_dist_modal__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var bootstrap_js_dist_tab__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! bootstrap/js/dist/tab */ "./node_modules/bootstrap/js/dist/tab.js");
+/* harmony import */ var bootstrap_js_dist_tab__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(bootstrap_js_dist_tab__WEBPACK_IMPORTED_MODULE_4__);
+window.$ = window.jQuery = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js"); // import 'bootstrap/js/dist/alert';
+
+ // import 'bootstrap/js/dist/carousel';
+
 
 
  // import 'bootstrap/js/dist/popover';
@@ -27,6 +30,26 @@ __webpack_require__.r(__webpack_exports__);
 
  // import 'bootstrap/js/dist/toast';
 // import 'bootstrap/js/dist/tooltip';
+
+__webpack_require__(/*! ./sticky */ "./src/js/sticky.js");
+
+/***/ }),
+
+/***/ "./src/js/sticky.js":
+/*!**************************!*\
+  !*** ./src/js/sticky.js ***!
+  \**************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! jquery-sticky */ "./node_modules/jquery-sticky/jquery.sticky.js");
+
+document.addEventListener('DOMContentLoaded', function () {
+  $("#sticker").sticky({
+    topSpacing: 80,
+    bottomSpacing: 400
+  });
+});
 
 /***/ }),
 

@@ -33,6 +33,9 @@
                 </li>
             </ul>
         </nav>
+    <div class="logout">
+        <a href="profile.php" class="btn btn-warning">Voir le profil</a>
+    </div>
 
 
 </aside>
