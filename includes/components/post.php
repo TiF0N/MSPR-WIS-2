@@ -7,7 +7,7 @@
         <?php if (isset($author) && isset($author['nom'])): ?>
             <span>Ecrit par : <?php echo $author['firstname']; ?></span>
         <?php endif; ?>
-        <span>Publié le :  <?php echo date('Y', strtotime($post['created_at'])); ?></span>
+        <span>Publié le  <?php echo date('jS F', strtotime($post['created_at'])); ?></span>
 
     </div>
 
@@ -18,21 +18,14 @@
     </div>
 
     <?php if ($_SESSION['id'] === $post['user_id']): ?>
-<<<<<<< Updated upstream
+
     <div class="card-footer d-flex gap-2">
         <form action="includes/delete-post.php?id=<?php echo $post['id']; ?>" method="POST">
             <button type="submit" class="btn btn-sm btn-outline-warning">
                 Supprimer
             </button>
         </form>             
-=======
-        <div class="card-footer d-flex gap-2">
-            <form action="includes/delete-post.php?id=<?php echo $post['id']; ?>" method="POST">
-                <button type="submit" class="btn btn-sm btn-outline-warning">
-                    Supprimer
-                </button>
-            </form>
->>>>>>> Stashed changes
+
 
             <a href="#" class="btn btn-sm btn-outline-secondary">Modifier</a>
         </div>

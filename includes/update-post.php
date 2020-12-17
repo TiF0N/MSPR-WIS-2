@@ -10,3 +10,8 @@ $data = [
     'content' =>  $_POST['content'],
 
     ];
+
+$dbh = connectDB();
+
+$stmt = $dbh->prepare('UPDATE posts SET content = :content   WHERE id = :id');
+$stmt->bindValue(':content', $data['content']);
