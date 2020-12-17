@@ -11,7 +11,7 @@ $user = getUser($id);
 
         <section class="section py-5 mx-auto ">
 
-            <div class="d-flex justify-content-center flex-wrap  ">
+            <div class="d-flex justify-content-center flex-column">
 
                 <div class="py-3  border border-danger">
 
