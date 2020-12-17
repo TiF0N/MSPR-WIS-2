@@ -20,7 +20,7 @@
             <button type="submit" class="btn btn-sm btn-outline-warning">
                 Supprimer
             </button>
-        </form>
+        </form>             
 
         <a href="#" class="btn btn-sm btn-outline-secondary">Modifier</a>
     </div>
