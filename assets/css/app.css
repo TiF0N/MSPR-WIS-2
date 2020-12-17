@@ -11686,6 +11686,10 @@ fieldset:disabled .btn {
 
 #sidebar {
   width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: calc(88vh - 90px);
 }
 
 #sidebar .nav-item .nav-link {
@@ -11694,5 +11698,14 @@ fieldset:disabled .btn {
 
 #sidebar .nav-item .nav-link:hover {
   color: #ffc107;
+}
+
+#sidebar .logout {
+  display: flex;
+  justify-content: center;
+}
+
+#sidebar .logout a {
+  padding: 1px 2.5em;
 }
 
