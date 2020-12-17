@@ -74,11 +74,25 @@
             list-style-type: none;
           }
         }
-
       }
     }
-
-
+  }
+  .edit-user {
+    margin: 5.5em;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
   }
 }
 

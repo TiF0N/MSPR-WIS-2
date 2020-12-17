@@ -2,24 +2,18 @@
 require_once 'includes/helpers.php';
 require_once 'includes/layout/header.php';
 require_once 'includes/components/navbar.php';
-
-
 $user = getUser($_SESSION['id']);
 ?>
+    <main id="main">
+        <section class="edit-user container mx-auto">
+            <div class="title">
 
-    <section>
-        <div class="container">
-
-            <div class="pt-4 d-flex justify-between align-items-center">
-                <h1>Réglages du compte</h1>
-
-                <a href="includes/delete-user.php?id=<?php echo $user['id']; ?>"
-                   class="btn btn-outline-danger m-lg-3x²">Supprimer mon compte</a>
+                    <h1>Réglages du compte</h1>
+                    <a href="includes/delete-user.php?id=<?php echo $user['id']; ?>"
+                       class="btn btn-outline-danger m-lg-3">Supprimer</a>
             </div>
 
-            <form class="p-5" action="includes/update-user.php?id=<?php echo $user['id']; ?>" method="POST">
-
-
+            <form class=" p-5" action="includes/update-user.php?id=<?php echo $user['id']; ?>" method="POST">
                 <div class="mb-3">
                     <label for="formFile" class="form-label">Photo de Profil</label>
                     <input class="form-control" type="text" name="profil_pic" id="formFile"
@@ -78,11 +72,9 @@ $user = getUser($_SESSION['id']);
                 <button class="btn btn-warning mt-3 mb-3" type="submit">
                     Mettre à jour
                 </button>
-
             </form>
-
-        </div>
-    </section>
+        </section>
+    </main>
 
 
 <?php include_once 'includes/layout/footer.php'; ?>
