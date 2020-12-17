@@ -14,7 +14,7 @@ $user = getUser($id);
             <div class="profile bg-light shadow">
                 <div class="py-3">
                     <div class="avatar">
-                        <img src="<?php echo $user['profil_pic']; ?>" alt="">
+                        <img class="rounded-circle" src="<?php echo $user['profil_pic']; ?>" alt="">
                     </div>
                     <div class="profile-name">
                         <h1 class="h1">Compte de : <?php echo $user['nom'] . ' ' . $user['firstname']; ?></h1>
