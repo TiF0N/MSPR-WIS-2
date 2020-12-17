@@ -45,4 +45,12 @@ function getUserPosts($id)
 }
 
 
+// On récupere les utilisateurs
+function getUsers()
+{
+    $dbh = connectDB();
+    $stmt = $dbh->query("SELECT * FROM users");
+    return $stmt->fetchAll(PDO::FETCH_ASSOC);
+}
+
 ?>

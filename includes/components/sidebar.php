@@ -12,8 +12,8 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        Liste de mes Amis
+                    <a class="nav-link" href="users.php">
+                        Liste des utilisateurs
                     </a>
                 </li>
                 <li class="nav-item">
