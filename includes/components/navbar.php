@@ -1,6 +1,9 @@
 <?php include_once 'includes/helpers.php'; ?>
 
-<?php $user = getUser($_SESSION['id']); ?>
+<?php
+$user = getUser($_SESSION['id']);
+
+?>
 
 <header id="header">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -29,7 +32,7 @@
                             <?php echo $user['firstname'] ?>
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="profile.php">Profil</a></li>
+                            <li><a class="dropdown-item" href="profile.php?id=<?php echo $_SESSION['id']?>">Profil</a></li>
                             <li><a class="dropdown-item" href="edit-user.php">Paramètres</a></li>
                             <li>
                                 <hr class="dropdown-divider">

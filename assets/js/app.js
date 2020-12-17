@@ -31,7 +31,32 @@ window.$ = window.jQuery = __webpack_require__(/*! jquery */ "./node_modules/jqu
  // import 'bootstrap/js/dist/toast';
 // import 'bootstrap/js/dist/tooltip';
 
+__webpack_require__(/*! ./scrollreveal */ "./src/js/scrollreveal.js");
+
 __webpack_require__(/*! ./sticky */ "./src/js/sticky.js");
+
+/***/ }),
+
+/***/ "./src/js/scrollreveal.js":
+/*!********************************!*\
+  !*** ./src/js/scrollreveal.js ***!
+  \********************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var scrollreveal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! scrollreveal */ "./node_modules/scrollreveal/dist/scrollreveal.es.js");
+
+var slideUp = {
+  distance: '30%',
+  origin: 'bottom',
+  opacity: 0.5,
+  interval: 200,
+  scale: 0.9,
+  cleanup: true
+};
+Object(scrollreveal__WEBPACK_IMPORTED_MODULE_0__["default"])().reveal('.slide-up', slideUp);
 
 /***/ }),
 
