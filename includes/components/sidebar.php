@@ -16,19 +16,10 @@
                         Liste des utilisateurs
                     </a>
                 </li>
+
                 <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        Customers
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        Reports
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        Integrations
+                    <a class="nav-link" href="mentions-legales.php">
+                        Mentions légales
                     </a>
                 </li>
             </ul>

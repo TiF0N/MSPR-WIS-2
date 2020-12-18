@@ -11608,6 +11608,10 @@ fieldset:disabled .btn {
   position: fixed;
 }
 
+#main .mentions {
+  margin-top: 100px;
+}
+
 #main .content-wrapper {
   flex-grow: 1;
 }
