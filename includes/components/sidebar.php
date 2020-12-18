@@ -34,7 +34,7 @@
             </ul>
         </nav>
     <div class="logout">
-        <a href="profile.php" class="btn btn-warning">Voir le profil</a>
+        <a href="profile.php?id=<?php echo $_SESSION['id']?>" class="btn btn-warning">Voir le profil</a>
     </div>
 
 

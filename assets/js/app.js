@@ -46,7 +46,7 @@ __webpack_require__(/*! ./sticky */ "./src/js/sticky.js");
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-!(function webpackMissingModule() { var e = new Error("Cannot find module 'scrollreveal'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+/* harmony import */ var scrollreveal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! scrollreveal */ "./node_modules/scrollreveal/dist/scrollreveal.es.js");
 
 var slideUp = {
   distance: '30%',
@@ -56,7 +56,7 @@ var slideUp = {
   scale: 0.9,
   cleanup: true
 };
-!(function webpackMissingModule() { var e = new Error("Cannot find module 'scrollreveal'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())().reveal('.slide-up', slideUp);
+Object(scrollreveal__WEBPACK_IMPORTED_MODULE_0__["default"])().reveal('.slide-up', slideUp);
 
 /***/ }),
 
@@ -71,7 +71,7 @@ __webpack_require__(/*! jquery-sticky */ "./node_modules/jquery-sticky/jquery.st
 
 document.addEventListener('DOMContentLoaded', function () {
   $("#sticker").sticky({
-    topSpacing: 80,
+    topSpacing: 100,
     bottomSpacing: 400
   });
 });
