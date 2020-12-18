@@ -24,10 +24,10 @@
 
                 <ul class="list-unstyled m-3 ">
                     <li>
-                        <a class="text-warning text-decoration-none" href="../../index.php">Fil d'actualité</a>
+                        <a class="text-warning text-decoration-none" href="#">Fil d'actualité</a>
                     </li>
                     <li>
-                        <a class="text-warning text-decoration-none" href="profile.php">Voir mon profil</a>
+                        <a class="text-warning text-decoration-none" href="profile.php?id=<?php echo $_SESSION['id']?>">Voir mon profil</a>
                     </li>
 
                 </ul>
