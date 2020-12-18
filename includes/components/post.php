@@ -25,6 +25,14 @@ $modif = getUserPosts($_SESSION['id']);
         <?php endif; ?>
     </div>
 
+    <div class="card-footer">
+        <form action="" method="POST">
+            <button type="submit" class="btn btn-outline-danger btn-sm">
+                like
+            </button>
+        </form>
+    </div>
+
     <?php if ($_SESSION['id'] === $post['user_id']): ?>
 
         <div class="card-footer d-flex gap-2">

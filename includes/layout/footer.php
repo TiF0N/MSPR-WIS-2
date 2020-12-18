@@ -60,10 +60,9 @@
 
 </footer>
 <!-- Footer -->
-
+<?php include_once 'scripts.php'; ?>
 <?php include_once 'includes/debugbar.php'; ?>
-<script src="assets/js/manifest.js"></script>
-<script src="assets/js/vendor.js"></script>
-<script src="assets/js/app.js"></script>
+
+
 </body>
 </html>

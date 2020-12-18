@@ -39,4 +39,4 @@
     </main>
 
 
-<?php include_once 'includes/layout/footer.php'; ?>
+<?php include_once 'scripts.php'; ?>
