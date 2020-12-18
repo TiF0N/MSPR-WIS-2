@@ -28,12 +28,20 @@ $user = getUser($id);
                 <div class="profile-bio">
                     <div class="py-5">
                         <div class="card">
-                            <div class="card-header bg-dark">
-                                <h2 class="text-warning">BIO</h2>
+                            <div class="card-header bg-dark text-center">
+                                <h2 class="text-warning">Profil</h2>
                             </div>
 
                             <div class="card-body">
-                                <p class="card-text"><?php echo $user['bio']; ?></p>
+                                <p class="card-text ">Bio : <?php echo $user['bio']; ?></p>
+
+                                <p class="card-text ">Specialité : <?php echo $user['specialty']; ?></p>
+
+                                <p class="card-text"> Date de naissance :  <?php echo $user['dob']; ?></p>
+
+                                <p class="card-text"> Habite à  :  <?php echo $user['ville']; ?></p>
+
+
                             </div>
                         </div>
                     </div>
