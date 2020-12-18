@@ -11795,3 +11795,31 @@ fieldset:disabled .btn {
   margin-bottom: 30px;
 }
 
+#inscription {
+  background-color: #2c3034;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#inscription .container .card {
+  background-color: #2c3034;
+  color: #ffffff;
+  padding: 1.5em;
+  box-shadow: 5px 4px 50px #000000;
+}
+
+#inscription .container .card a {
+  color: #ffffff;
+}
+
+#inscription .container .card .form-text {
+  color: #ffffff;
+}
+
+#inscription .container .button {
+  display: flex;
+  justify-content: flex-end;
+}
+
