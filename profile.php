@@ -37,9 +37,9 @@ $user = getUser($id);
 
                                 <p class="card-text ">Specialité : <?php echo $user['specialty']; ?></p>
 
-                                <p class="card-text"> Date de naissance :  <?php echo $user['dob']; ?></p>
+                                <p class="card-text"> Date de naissance : <?php echo $user['dob']; ?></p>
 
-                                <p class="card-text"> Habite à  :  <?php echo $user['ville']; ?></p>
+                                <p class="card-text"> Habite à : <?php echo $user['ville']; ?></p>
 
 
                             </div>
@@ -51,11 +51,18 @@ $user = getUser($id);
 
                 <div class="profile-publication">
                     <div class="py-4">
-                        <h2 class="h2 text-center">Publications likés :</h2>
-                        <ul>
+                        <h2 class="h2 text-center">Dernières publications : </h2>
+                        <ul class="mt-4 p-2 rounded-2">
                             <li>
-                                <span>La publication</span>
-                                <a href="#" class="btn btn-outline-warning mt-3">Voir la publication</a>
+                                <?php if ($posts = getUserPosts($id)): ?>
+
+                                    <?php foreach ($posts as $post): ?>
+
+                                        <?php require 'includes/components/post.php'; ?>
+
+                                    <?php endforeach; ?>
+
+                                <?php endif; ?>
                             </li>
                         </ul>
                     </div>
