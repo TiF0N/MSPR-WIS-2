@@ -12,7 +12,7 @@ $modif = getUserPosts($_SESSION['id']);
     <div class="card-header">
         <?php if (isset($author) && isset($author['nom'])): ?>
             <span> Ecrit par
-            <a href="profile.php?id=<?php echo $user['id']; ?>"><?php echo $author['firstname']; ?></a>
+            <a href="profile.php?id=<?php echo $post['user_id']; ?>"><?php echo $author['firstname']; ?></a>
         </span>
 
         <?php endif; ?>
@@ -33,8 +33,8 @@ $modif = getUserPosts($_SESSION['id']);
                 <button type="submit" class="btn btn-sm btn-outline-warning">
                     Supprimer
                 </button>
-
             </form>
+
             <button type="button" class="btn btn-sm btn-warning" data-bs-toggle="modal"
                     data-bs-target="#update-post-<?php echo $post['id']; ?>">
                 Modifier
