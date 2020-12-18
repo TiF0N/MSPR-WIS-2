@@ -62,14 +62,15 @@ $modif = getUserPosts($_SESSION['id']);
                                     <label for="formFile">Contenu</label>
                                     <input class="form-control" type="text" name="content" id="formFile"
                                            value="<?php echo $post['content']; ?>" required>
-                                </form>
-                            </div>
 
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close
-                                </button>
-                                <button type="submit" class="btn btn-primary">Save</button>
-                            </div>
+                                    </div>
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-sm btn-outline-warning" data-bs-dismiss="modal">Close
+                                        </button>
+                                        <button type="submit" class="btn btn-sm btn-warning">Save</button>
+                                    </div>
+                                </form>
                         </div>
                     </div>
                 </div>
