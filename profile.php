@@ -20,7 +20,7 @@ $user = getUser($id);
                     </div>
                     <div class="profile-name">
                         <h1 class="h1">Compte de : <?php echo $user['nom'] . ' ' . $user['firstname']; ?></h1>
-                        <?php if ($_SESSION['id'] === $user['user_id']) ?>
+                        <?php //if ($_SESSION['id'] === $user['user_id']) ?>
                         <a class="btn btn-outline-warning" href="edit-user.php">Modifier mon profil</a>
                     </div>
                 </div>
