@@ -10,7 +10,7 @@ $users = getUsers();
             <div class="users-list">
                 <div class="title-list">
                     <h1 class="h1 py-3">Liste des utilisateurs</h1>
-                    <a href="profile.php" class="btn btn-warning m-lg-3">Voir mon profil</a>
+                    <a href="profile.php?id=<?php echo $_SESSION['id']?>" class="btn btn-warning m-lg-3">Voir mon profil</a>
                 </div>
                 <?php if ($users = getUsers()): ?>
                     <div class="list-group">
