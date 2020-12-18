@@ -11804,6 +11804,7 @@ fieldset:disabled .btn {
 }
 
 #inscription .container .card {
+  border-radius: 30px;
   background-color: #2c3034;
   color: #ffffff;
   padding: 1.5em;
