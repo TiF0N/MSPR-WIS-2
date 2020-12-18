@@ -5,13 +5,13 @@ $posts_users = getUserPosts($id); ?>
 <section class="py-5">
     <div class="container">
 
-        <h1 class="pt-3 d-flex justify-content-center">Publications</h1>
+        <h1 class="pt-3 d-flex justify-content-center mb-3 text-warning fw-bold ">Fil d'actus </h1>
 
         <div class="row">
             <div class="col-lg-4">
                 <form id="sticker" method="post" action="./includes/store-post.php" class="my-5">
                     <div class="form-group mb-3">
-                        <label class="h5" for="exampleFormControlTextarea1">Votre publication</label>
+                        <label class="h5" for="exampleFormControlTextarea1">Quoi de neuf ?</label>
                         <textarea placeholder="Ecrire votre publication..." class="form-control"
                                   id="exampleFormControlTextarea1" rows="4"
                                   name="content"></textarea>
@@ -22,7 +22,7 @@ $posts_users = getUserPosts($id); ?>
             </div>
 
             <div class="col-lg-4">
-                <h3 class="text-center">Dernières publications</h3>
+                <h3 class="text-center">Dernières publications :</h3>
                 <?php if ($posts = getPosts()): ?>
                     <ul class="mt-4 p-2 rounded-2">
                         <?php foreach ($posts as $post): ?>
