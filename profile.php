@@ -29,7 +29,7 @@ $user = getUser($id);
                     <div class="py-5">
                         <div class="card">
                             <div class="card-header bg-dark text-center">
-                                <h2 class="text-warning">Profil</h2>
+                                <h2 class="text-warning font-monospace">Profil</h2>
                             </div>
 
                             <div class="card-body">
