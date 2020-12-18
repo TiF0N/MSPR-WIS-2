@@ -34,4 +34,4 @@ $stmt->bindValue(':bio', $data['bio']);
 $stmt->bindValue(':id', $data['id']);
 $stmt->execute();
 
-header("Location: ../profile.php?id=$id");
+header('Location: ../');

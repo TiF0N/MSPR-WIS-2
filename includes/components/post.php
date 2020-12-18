@@ -3,12 +3,18 @@
 $posts = getPosts();
 $modif = getUserPosts($_SESSION['id']);
 
+//$id = $_GET['id'];
+//$users = getUsers();
+
 ?>
 
 <div class="card mb-4 slide-up">
     <div class="card-header">
         <?php if (isset($author) && isset($author['nom'])): ?>
-            <span>Ecrit par : <?php echo $author['firstname']; ?></span>
+            <span> Ecrit par
+            <a href="profile.php?id=<?php echo $user['id']; ?>"><?php echo $author['firstname']; ?></a>
+        </span>
+
         <?php endif; ?>
         <span>Publié le  <?php echo date('jS F', strtotime($post['created_at'])); ?></span>
     </div>
@@ -35,7 +41,6 @@ $modif = getUserPosts($_SESSION['id']);
             </button>
 
 
-
             <?php foreach ($modif as $post): ?>
 
                 <!-- Button trigger modal -->
@@ -45,7 +50,7 @@ $modif = getUserPosts($_SESSION['id']);
                 <div class="modal fade mt-5" id="update-post-<?php echo $post['id']; ?>" tabindex="-1"
                      aria-labelledby="update-post-<?php echo $post['id']; ?>" aria-hidden="true"
                      style="z-index: 9999">
-                    <div class="modal-dialog">
+                    <div class="modal-dialog modal-dialog-scrollable ">
                         <div class="modal-content">
                             <div class="modal-header">
 
@@ -59,18 +64,20 @@ $modif = getUserPosts($_SESSION['id']);
                             <div class="modal-body">
                                 <form class="p-5" action="includes/update-post.php?id=<?php echo $post['id']; ?>"
                                       method="POST">
-                                    <label for="formFile">Contenu</label>
-                                    <input class="form-control" type="text" name="content" id="formFile"
-                                           value="<?php echo $post['content']; ?>" required>
-
+                                    <div class="input-group input-group-lg">
+                                        <input class="form-control" type="text" name="content" id="formFile"
+                                               value="<?php echo $post['content']; ?>" required>
                                     </div>
 
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-sm btn-outline-warning" data-bs-dismiss="modal">Close
-                                        </button>
-                                        <button type="submit" class="btn btn-sm btn-warning">Save</button>
-                                    </div>
-                                </form>
+                            </div>
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-sm btn-outline-warning" data-bs-dismiss="modal">
+                                    Close
+                                </button>
+                                <button type="submit" class="btn btn-sm btn-warning">Save</button>
+                            </div>
+                            </form>
                         </div>
                     </div>
                 </div>
