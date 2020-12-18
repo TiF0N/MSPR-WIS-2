@@ -27,51 +27,53 @@ $modif = getUserPosts($_SESSION['id']);
                 <button type="submit" class="btn btn-sm btn-outline-warning">
                     Supprimer
                 </button>
+
             </form>
+            <button type="button" class="btn btn-sm btn-warning" data-bs-toggle="modal"
+                    data-bs-target="#update-post-<?php echo $post['id']; ?>">
+                Modifier
+            </button>
 
 
 
-                <?php foreach ($modif as $post): ?>
-                
-                    <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-sm btn-warning" data-bs-toggle="modal"
-                            data-bs-target="#update-post-<?php echo $post['id']; ?>">
-                        Modifier
-                    </button>
+            <?php foreach ($modif as $post): ?>
 
-                    <!-- Modal -->
-                    <div class="modal fade mt-5" id="update-post-<?php echo $post['id']; ?>" tabindex="-1"
-                         aria-labelledby="update-post-<?php echo $post['id']; ?>" aria-hidden="true"
-                         style="z-index: 9999">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-
-                                    <h5 class="modal-title" id="update-post">Modifier mon post</h5>
+                <!-- Button trigger modal -->
 
 
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                            aria-label="Close"></button>
-                                </div>
+                <!-- Modal -->
+                <div class="modal fade mt-5" id="update-post-<?php echo $post['id']; ?>" tabindex="-1"
+                     aria-labelledby="update-post-<?php echo $post['id']; ?>" aria-hidden="true"
+                     style="z-index: 9999">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
 
-                                <div class="modal-body">
-                                    <form class="p-5" action="includes/update-post.php?id=<?php echo $post['id']; ?>"
-                                          method="POST">
-                                        <label for="formFile">Contenu</label>
-                                        <input class="form-control" type="text" name="content" id="formFile"
-                                               value="<?php echo $post['content']; ?>" required>
-                                    </form>
-                                </div>
+                                <h5 class="modal-title" id="update-post">Modifier mon post</h5>
 
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close
-                                    </button>
-                                    <button type="submit" class="btn btn-primary">Save</button>
-                                </div>
+
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                            </div>
+
+                            <div class="modal-body">
+                                <form class="p-5" action="includes/update-post.php?id=<?php echo $post['id']; ?>"
+                                      method="POST">
+                                    <label for="formFile">Contenu</label>
+                                    <input class="form-control" type="text" name="content" id="formFile"
+                                           value="<?php echo $post['content']; ?>" required>
+                                </form>
+                            </div>
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close
+                                </button>
+                                <button type="submit" class="btn btn-primary">Save</button>
                             </div>
                         </div>
                     </div>
-                <?php endforeach; ?>
+                </div>
+            <?php endforeach; ?>
 
 
         </div>

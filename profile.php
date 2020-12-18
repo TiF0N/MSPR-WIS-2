@@ -1,6 +1,7 @@
 <?php include_once 'includes/layout/header.php';
 include_once 'includes/helpers.php';
-$id = $_SESSION['id'];
+$id = $_GET['id'];
+$id_user = $_SESSION['id'];
 $user = getUser($id);
 
 

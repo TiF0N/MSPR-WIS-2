@@ -46,7 +46,7 @@ __webpack_require__(/*! ./sticky */ "./src/js/sticky.js");
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var scrollreveal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! scrollreveal */ "./node_modules/scrollreveal/dist/scrollreveal.es.js");
+!(function webpackMissingModule() { var e = new Error("Cannot find module 'scrollreveal'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
 
 var slideUp = {
   distance: '30%',
@@ -56,7 +56,7 @@ var slideUp = {
   scale: 0.9,
   cleanup: true
 };
-Object(scrollreveal__WEBPACK_IMPORTED_MODULE_0__["default"])().reveal('.slide-up', slideUp);
+!(function webpackMissingModule() { var e = new Error("Cannot find module 'scrollreveal'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())().reveal('.slide-up', slideUp);
 
 /***/ }),
 
