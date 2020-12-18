@@ -53,4 +53,8 @@ function getUsers()
     return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
 
-?>
+//On récupere les likes
+function getLikes()
+{
+
+}

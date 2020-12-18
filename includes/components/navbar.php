@@ -26,7 +26,7 @@ $user = getUser($_SESSION['id']);
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                            data-bs-toggle="dropdown" aria-expanded="false">
                             <?php if (isset($user['profil_pic'])): ?>
-                                <img class="rounded-circle m-1" style="height: 70px; width: auto"
+                                <img class="rounded-circle m-1" style="height: 100px; width: 120px; border-radius: 25px "
                                      src="<?php echo $user['profil_pic']; ?>" alt="<?php echo $user['firstname'] ?>">
                             <?php endif; ?>
                             <?php echo $user['firstname'] ?>

@@ -1,7 +1,8 @@
 <?php include_once 'includes/layout/header.php';
 include_once 'includes/helpers.php';
-$id = $_GET['id'];
+$id = $_SESSION['id'];
 $user = getUser($id);
+
 
 ?>
 <?php include_once 'includes/components/navbar.php'; ?>
@@ -18,7 +19,7 @@ $user = getUser($id);
                     </div>
                     <div class="profile-name">
                         <h1 class="h1">Compte de : <?php echo $user['nom'] . ' ' . $user['firstname']; ?></h1>
-
+                        <?php if ($_SESSION['id'] === $user['user_id']) ?>
                         <a class="btn btn-outline-warning" href="edit-user.php">Modifier mon profil</a>
                     </div>
                 </div>
