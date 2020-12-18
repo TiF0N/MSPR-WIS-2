@@ -40,7 +40,7 @@
 
                 <ul class="list-unstyled m-3 ">
                     <li>
-                        <a class="text-warning text-decoration-none" href="#">Modifier mes paramètres</a>
+                        <a class="text-warning text-decoration-none" href="mentions-legales.php">Mentions légales</a>
                     </li>
 
                 </ul>
