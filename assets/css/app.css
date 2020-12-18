@@ -11757,3 +11757,37 @@ fieldset:disabled .btn {
   background-color: red;
 }
 
+#login {
+  background-color: #2c3034;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#login .container {
+  background-color: #2c3034;
+}
+
+#login .container .card {
+  border-radius: 30px;
+  background-color: #2c3034;
+  box-shadow: 5px 4px 50px #000000;
+  padding-top: 2em;
+  padding-left: 5em;
+  padding-right: 5em;
+  color: #ffffff;
+}
+
+#login .container .card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#login .container .col {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 30px;
+}
+
